@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* LAYOUT UTAMA */
+.admin-layout {
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 280px;
+    min-width: 280px;
+    height: 100vh;
+
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    background: #383838;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    z-index: 1000;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar-brand {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    height: 65px;
+    min-height: 65px;
+    gap: 10px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 14px 18px;
+    border-bottom: 1px solid #666;
+    border-right: 1px solid #666;
+
+    background: #383838;
+}
+
+.sidebar-brand img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.brand-tagline {
+    font-size: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* NAVIGASI */
+.sidebar-nav {
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #eee;
+    transition: 0.2s;
+}
+
+.nav-link i {
+    font-size: 18px;
+    min-width: 22px;
+}
+
+.nav-link:hover {
+    background: #505050;
+}
+
+.nav-link.active {
+    background: #e0e0e0;
+    color: #222;
+}
+
+
+/* PROFIL ADMIN SIDEBAR */
+.sidebar-profile {
+    position: sticky;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px;
+    margin-top: auto;
+
+    border-top: 1px solid #666;
+    background: #383838;
+
+    z-index: 20;
+}
+
+/* AVATAR */
+.profile-avatar {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+
+    border-radius: 50%;
+    background: #fff;
+    color: #383838;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* INFORMASI PROFIL */
+.profile-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profile-info p {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 4px;
+}
+
+/* TOMBOL LOGOUT */
+.logout-button {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 8px;
+    color: #fff;
+
+    font-size: 19px;
+    transition: 0.2s;
+}
+
+.logout-button:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+/* AREA KONTEN */
+.main-area {
+    margin-left: 280px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+.admin-header {
+    position: fixed;
+    top: 0;
+    left: 280px;
+    right: 0;
+
+    height: 65px;
+    min-height: 65px;
+
+    background: #383838;
+    color: white;
+
+    padding: 15px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 900;
+}
+
+.header-title h1 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header-date {
+    font-size: 13px;
+    color: #ddd;
+}
+
+.header-admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-admin h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header-admin p {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 4px;
+}

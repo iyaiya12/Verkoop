@@ -1,0 +1,248 @@
+.structure-section {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+    padding: 45px 0 55px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+/* Background */
+.structure-background {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Container */
+.structure-container {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Heading */
+.structure-container > h2 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 800;
+    margin: 0 0 25px;
+}
+
+/* ==============================
+   COORDINATOR
+============================== */
+
+.coordinator-card {
+    width: 95%;
+    max-width: 1050px;
+    min-height: 200px;
+    margin: 0 auto 25px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 22px;
+
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+.coordinator-image {
+    width: 30%;
+    min-width: 150px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 17px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.coordinator-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.coordinator-info {
+    flex: 1;
+    min-width: 0;
+    padding-right: 12px;
+}
+
+.coordinator-info h3 {
+    font-size: 19px;
+    font-weight: 800;
+    margin: 0 0 2px;
+    color: #111111;
+}
+
+.coordinator-info h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 0 12px;
+    color: #111111;
+}
+
+.coordinator-info p {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0;
+    color: #222222;
+}
+
+.coordinator-info p i {
+    font-size: 20px;
+    color: #aaaaaa;
+}
+
+/* ==============================
+   MEMBERS
+============================== */
+
+.members-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+.member-card {
+    width: 250px;
+    min-height: 100px;
+    padding: 7px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    box-sizing: border-box;
+}
+
+.member-image {
+    width: 70px;
+    height: 90px;
+    min-width: 55px;
+
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.member-info {
+    min-width: 0;
+}
+
+.member-info h3 {
+    font-size: 13px;
+    font-weight: 800;
+    line-height: 1.4;
+    margin: 0 0 5px;
+    color: #111111;
+}
+
+.member-info p {
+    font-size: 10px;
+    font-weight: 500;
+    margin: 0;
+    color: #444444;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+
+    .structure-section {
+        min-height: auto;
+        padding: 40px 0;
+    }
+
+    .structure-container {
+        width: 92%;
+    }
+
+    .coordinator-card {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .coordinator-image {
+        width: 35%;
+        min-width: 120px;
+        height: 110px;
+    }
+
+    .coordinator-info h3 {
+        font-size: 15px;
+    }
+
+    .coordinator-info h4 {
+        font-size: 12px;
+    }
+
+    .coordinator-info p {
+        font-size: 11px;
+    }
+
+    .member-card {
+        width: calc(50% - 8px);
+    }
+}
+
+@media (max-width: 480px) {
+
+    .structure-container > h2 {
+        font-size: 22px;
+    }
+
+    .coordinator-card {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px;
+    }
+
+    .coordinator-image {
+        width: 100%;
+        height: 180px;
+    }
+
+    .coordinator-info {
+        padding: 5px;
+    }
+
+    .member-card {
+        width: 100%;
+    }
+}

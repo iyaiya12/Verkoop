@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1">
+      <stop stop-color="#e5d7bd"/>
+      <stop offset="1" stop-color="#bda989"/>
+    </linearGradient>
+    <linearGradient id="bag" x2="1" y2="1">
+      <stop stop-color="#fff" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#edf6fa" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".72"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#bg)"/>
+  <path d="M0 45h480M0 92h480M0 140h480" stroke="#fff" stroke-opacity=".22" stroke-width="8"/>
+  <rect x="83" y="53" width="314" height="226" rx="28" fill="#554735" opacity=".2"/>
+  <path d="M92 54h296l-17 216q-1 18-21 18H129q-20 0-21-18z" fill="url(#bag)" stroke="#fff" stroke-opacity=".88" stroke-width="5"/>
+  <path d="M106 68h267M109 254h258" stroke="#fff" stroke-opacity=".8" stroke-width="8"/>
+  <g fill="#e4a754" stroke="#bd7738" stroke-width="4">
+    <rect x="127" y="126" width="90" height="36" rx="18" transform="rotate(18 127 126)"/>
+    <rect x="220" y="115" width="93" height="36" rx="18" transform="rotate(-9 220 115)"/>
+    <rect x="284" y="159" width="83" height="36" rx="18" transform="rotate(14 284 159)"/>
+    <rect x="144" y="188" width="92" height="36" rx="18" transform="rotate(-10 144 188)"/>
+    <rect x="237" y="204" width="93" height="36" rx="18" transform="rotate(8 237 204)"/>
+  </g>
+  <g fill="#f7d18a" opacity=".9">
+    <path d="M145 139l50 15M239 128l54-5M305 174l47 14M159 205l52-9M251 219l54 5" stroke="#f7d18a" stroke-width="5"/>
+  </g>
+  <circle cx="240" cy="171" r="28" fill="#f7f3e9" stroke="#d69034" stroke-width="4"/>
+  <text x="240" y="176" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ce8c32">SNACK</text>
+</svg>

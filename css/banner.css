@@ -1,0 +1,95 @@
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: min(100vh, 650px);
+    min-height: 420px;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 24px;
+
+    z-index: 2;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 30px;
+
+    color: #ffffff;
+}
+
+.hero-description {
+    max-width: 650px;
+    width: 40%;
+}
+
+.hero-description h1 {
+    font-size: clamp(24px, 3.2vw, 36px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0 0 14px;
+}
+
+.hero-description p {
+    font-size: clamp(13px, 1.2vw, 16px);
+    font-weight: 500;
+    line-height: 1.55;
+    margin: 0;
+}
+
+.hero-operational {
+    min-width: 180px;
+    text-align: right;
+    padding-bottom: 5px;
+}
+
+.hero-operational h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 0 5px;
+}
+
+.hero-operational p {
+    font-size: 14px;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .hero-bottom-vector {
+        height: 130px;
+    }
+}

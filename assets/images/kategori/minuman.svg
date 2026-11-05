@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320">
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1">
+      <stop stop-color="#f2e7c7"/>
+      <stop offset="1" stop-color="#d8c49b"/>
+    </linearGradient>
+    <linearGradient id="juice" x2="0" y2="1">
+      <stop stop-color="#ffe948"/>
+      <stop offset="1" stop-color="#f39418"/>
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" fill="url(#bg)"/>
+  <path d="M0 262h480M35 64h410M50 95h380" stroke="#fff" stroke-opacity=".55" stroke-width="7"/>
+  <g fill="none" stroke="#af9b77" stroke-width="4" opacity=".7">
+    <path d="M68 45v235M412 45v235M68 112h344M68 191h344"/>
+  </g>
+  <g transform="translate(103 44)">
+    <rect x="21" y="0" width="54" height="25" rx="6" fill="#f7f7ed"/>
+    <path d="M15 22h66l12 32v165q0 20-20 20H23q-20 0-20-20V54z" fill="url(#juice)" stroke="#fff" stroke-width="5"/>
+    <rect x="13" y="104" width="70" height="74" rx="12" fill="#fffdf3"/>
+    <circle cx="48" cy="136" r="23" fill="#e45b24"/>
+    <path d="M48 113c14 10 17 24 0 45-17-20-14-35 0-45z" fill="#f6bc24"/>
+    <text x="48" y="168" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#75602e">FRESH</text>
+  </g>
+  <g transform="translate(259 37)">
+    <rect x="23" y="0" width="55" height="26" rx="6" fill="#f8f6e8"/>
+    <path d="M16 23h69l12 35v164q0 20-20 20H24q-20 0-20-20V58z" fill="url(#juice)" stroke="#fff" stroke-width="5"/>
+    <rect x="14" y="107" width="73" height="75" rx="12" fill="#fffdf3"/>
+    <circle cx="50" cy="138" r="23" fill="#e6c52d"/>
+    <path d="M50 115c14 10 17 24 0 45-17-20-14-35 0-45z" fill="#77a43b"/>
+    <text x="50" y="171" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#75602e">FRESH</text>
+  </g>
+  <path d="M0 276h480" stroke="#b7a17c" stroke-width="8"/>
+</svg>

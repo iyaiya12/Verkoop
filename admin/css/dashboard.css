@@ -1,0 +1,104 @@
+
+/* KONTEN DASHBOARD */
+.dashboard-content {
+    margin-top: 65px;
+    padding: 25px 28px;
+    flex: 1;
+}
+
+.welcome-section {
+    margin-bottom: 20px;
+}
+
+.welcome-section h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 7px;
+}
+
+.welcome-section p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* STATISTIK */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 18px;
+}
+
+.stat-card {
+    background: #dedede;
+    min-height: 170px;
+    padding: 18px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.stat-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.stat-top i {
+    font-size: 22px;
+}
+
+.stat-card h3 {
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.stat-card p {
+    font-size: 15px;
+}
+
+/* AKSI CEPAT */
+.quick-actions {
+    margin-top: 18px;
+    padding: 18px;
+    background: #dedede;
+    border-radius: 12px;
+}
+
+.quick-actions h3 {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 17px;
+}
+
+.action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.action-card {
+    min-height: 125px;
+    background: #383838;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.action-card i {
+    font-size: 25px;
+}
+
+.action-card:hover {
+    background: #505050;
+    transform: translateY(-2px);
+}
+

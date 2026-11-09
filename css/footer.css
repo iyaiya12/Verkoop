@@ -1,0 +1,125 @@
+    .main-footer {
+        width: 100%;
+        background-color: #ffffff;
+        color: #111111;
+
+    }
+
+    .footer-container {
+        width: 95%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 30px 0;
+
+        display: grid;
+        grid-template-columns: 1.2fr 1.5fr 1fr;
+        gap: 50px;
+    }
+
+    .footer-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: #111111;
+        margin-bottom: 12px;
+    }
+
+    .footer-logo img {
+        width: 42px;
+        height: 42px;
+        object-fit: contain;
+    }
+
+    .footer-brand-text h2 {
+        font-size: 22px;
+        font-weight: 800;
+        margin: 0;
+        line-height: 1.2;
+    }
+
+    .footer-brand-text span {
+        font-size: 7px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .brand-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand-text span {
+        color: #000000;
+    }
+
+    .footer-brand p {
+        max-width: 280px;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: justify;
+        margin: 0;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        padding-top: 5px;
+    }
+
+    .footer-nav-column {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-nav-column a {
+        color: #111111;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .footer-nav-column a:hover {
+        color: #b20d2c;
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top: 2px;
+    }
+
+    .footer-contact a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        color: #111111;
+        font-size: 11px;
+        text-decoration: none;
+    }
+
+    .footer-contact i {
+        width: 15px;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    .footer-contact a:hover {
+        color: #b20d2c;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid #dddddd;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    .footer-bottom p {
+        font-size: 12px;
+        margin: 0;
+    }
